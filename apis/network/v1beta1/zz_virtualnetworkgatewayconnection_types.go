@@ -39,7 +39,7 @@ type CustomBGPAddressesParameters struct {
 
 	// single IP address that is part of the azurerm_virtual_network_gateway ip_configuration (second one)
 	// +kubebuilder:validation:Optional
-	Secondary *string `json:"secondary" tf:"secondary,omitempty"`
+	Secondary *string `json:"secondary,omitempty" tf:"secondary,omitempty"`
 }
 
 type IpsecPolicyInitParameters struct {

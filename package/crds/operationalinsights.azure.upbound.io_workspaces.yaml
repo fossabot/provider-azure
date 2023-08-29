@@ -97,7 +97,8 @@ spec:
                     type: string
                   reservationCapacityInGbPerDay:
                     description: The capacity reservation level in GB for this workspace.
-                      Must be in increments of 100 between 100 and 5000.
+                      Possible values are 100, 200, 300, 400, 500, 1000, 2000 and
+                      5000.
                     type: number
                   resourceGroupName:
                     description: The name of the resource group in which the Log Analytics
@@ -238,7 +239,8 @@ spec:
                     type: string
                   reservationCapacityInGbPerDay:
                     description: The capacity reservation level in GB for this workspace.
-                      Must be in increments of 100 between 100 and 5000.
+                      Possible values are 100, 200, 300, 400, 500, 1000, 2000 and
+                      5000.
                     type: number
                   retentionInDays:
                     description: The workspace data retention in days. Possible values
@@ -496,7 +498,8 @@ spec:
                     type: string
                   reservationCapacityInGbPerDay:
                     description: The capacity reservation level in GB for this workspace.
-                      Must be in increments of 100 between 100 and 5000.
+                      Possible values are 100, 200, 300, 400, 500, 1000, 2000 and
+                      5000.
                     type: number
                   resourceGroupName:
                     description: The name of the resource group in which the Log Analytics

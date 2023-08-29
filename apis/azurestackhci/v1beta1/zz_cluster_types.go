@@ -15,6 +15,9 @@ import (
 
 type ClusterInitParameters struct {
 
+	// The ID of the Automanage Configuration assigned to the Azure Stack HCI Cluster.
+	AutomanageConfigurationID *string `json:"automanageConfigurationId,omitempty" tf:"automanage_configuration_id,omitempty"`
+
 	// The Client ID of the Azure Active Directory which is used by the Azure Stack HCI Cluster. Changing this forces a new resource to be created.
 	ClientID *string `json:"clientId,omitempty" tf:"client_id,omitempty"`
 
@@ -29,6 +32,9 @@ type ClusterInitParameters struct {
 }
 
 type ClusterObservation struct {
+
+	// The ID of the Automanage Configuration assigned to the Azure Stack HCI Cluster.
+	AutomanageConfigurationID *string `json:"automanageConfigurationId,omitempty" tf:"automanage_configuration_id,omitempty"`
 
 	// The Client ID of the Azure Active Directory which is used by the Azure Stack HCI Cluster. Changing this forces a new resource to be created.
 	ClientID *string `json:"clientId,omitempty" tf:"client_id,omitempty"`
@@ -50,6 +56,10 @@ type ClusterObservation struct {
 }
 
 type ClusterParameters struct {
+
+	// The ID of the Automanage Configuration assigned to the Azure Stack HCI Cluster.
+	// +kubebuilder:validation:Optional
+	AutomanageConfigurationID *string `json:"automanageConfigurationId,omitempty" tf:"automanage_configuration_id,omitempty"`
 
 	// The Client ID of the Azure Active Directory which is used by the Azure Stack HCI Cluster. Changing this forces a new resource to be created.
 	// +kubebuilder:validation:Optional

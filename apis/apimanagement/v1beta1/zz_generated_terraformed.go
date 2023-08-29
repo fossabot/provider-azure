@@ -430,7 +430,7 @@ func (tr *APIOperationPolicy) LateInitialize(attrs []byte) (bool, error) {
 
 // GetTerraformSchemaVersion returns the associated Terraform schema version
 func (tr *APIOperationPolicy) GetTerraformSchemaVersion() int {
-	return 0
+	return 1
 }
 
 // GetTerraformResourceType returns Terraform resource type for this APIOperationTag
@@ -598,7 +598,7 @@ func (tr *APIPolicy) LateInitialize(attrs []byte) (bool, error) {
 
 // GetTerraformSchemaVersion returns the associated Terraform schema version
 func (tr *APIPolicy) GetTerraformSchemaVersion() int {
-	return 0
+	return 1
 }
 
 // GetTerraformResourceType returns Terraform resource type for this APIRelease
@@ -1522,7 +1522,7 @@ func (tr *GatewayAPI) LateInitialize(attrs []byte) (bool, error) {
 
 // GetTerraformSchemaVersion returns the associated Terraform schema version
 func (tr *GatewayAPI) GetTerraformSchemaVersion() int {
-	return 0
+	return 1
 }
 
 // GetTerraformResourceType returns Terraform resource type for this GlobalSchema
@@ -2530,7 +2530,7 @@ func (tr *Policy) LateInitialize(attrs []byte) (bool, error) {
 
 // GetTerraformSchemaVersion returns the associated Terraform schema version
 func (tr *Policy) GetTerraformSchemaVersion() int {
-	return 1
+	return 3
 }
 
 // GetTerraformResourceType returns Terraform resource type for this Product
@@ -2782,7 +2782,7 @@ func (tr *ProductPolicy) LateInitialize(attrs []byte) (bool, error) {
 
 // GetTerraformSchemaVersion returns the associated Terraform schema version
 func (tr *ProductPolicy) GetTerraformSchemaVersion() int {
-	return 0
+	return 1
 }
 
 // GetTerraformResourceType returns Terraform resource type for this ProductTag

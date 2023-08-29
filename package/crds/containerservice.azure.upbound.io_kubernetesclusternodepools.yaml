@@ -317,7 +317,7 @@ spec:
                                 type: number
                               netIpv4IpLocalPortRangeMax:
                                 description: The sysctl setting net.ipv4.ip_local_port_range
-                                  max value. Must be between 1024 and 60999. Changing
+                                  max value. Must be between 32768 and 65535. Changing
                                   this forces a new resource to be created.
                                 type: number
                               netIpv4IpLocalPortRangeMin:
@@ -347,7 +347,7 @@ spec:
                                 type: number
                               netIpv4TcpKeepaliveIntvl:
                                 description: The sysctl setting net.ipv4.tcp_keepalive_intvl.
-                                  Must be between 10 and 75. Changing this forces
+                                  Must be between 10 and 90. Changing this forces
                                   a new resource to be created.
                                 type: number
                               netIpv4TcpKeepaliveProbes:
@@ -377,12 +377,12 @@ spec:
                                 type: boolean
                               netNetfilterNfConntrackBuckets:
                                 description: The sysctl setting net.netfilter.nf_conntrack_buckets.
-                                  Must be between 65536 and 147456. Changing this
+                                  Must be between 65536 and 524288. Changing this
                                   forces a new resource to be created.
                                 type: number
                               netNetfilterNfConntrackMax:
                                 description: The sysctl setting net.netfilter.nf_conntrack_max.
-                                  Must be between 131072 and 1048576. Changing this
+                                  Must be between 131072 and 2097152. Changing this
                                   forces a new resource to be created.
                                 type: number
                               vmMaxMapCount:
@@ -499,7 +499,7 @@ spec:
                     type: string
                   osSku:
                     description: 'Specifies the OS SKU used by the agent pool. Possible
-                      values include: Ubuntu, CBLMariner, Mariner, Windows2019, Windows2022.
+                      values include: AzureLinux, Ubuntu, Windows2019, Windows2022.
                       If not specified, the default is Ubuntu if OSType=Linux or Windows2019
                       if OSType=Windows. And the default Windows OSSKU will be changed
                       to Windows2022 after Windows2019 is deprecated. Changing this
@@ -925,7 +925,7 @@ spec:
                                 type: number
                               netIpv4IpLocalPortRangeMax:
                                 description: The sysctl setting net.ipv4.ip_local_port_range
-                                  max value. Must be between 1024 and 60999. Changing
+                                  max value. Must be between 32768 and 65535. Changing
                                   this forces a new resource to be created.
                                 type: number
                               netIpv4IpLocalPortRangeMin:
@@ -955,7 +955,7 @@ spec:
                                 type: number
                               netIpv4TcpKeepaliveIntvl:
                                 description: The sysctl setting net.ipv4.tcp_keepalive_intvl.
-                                  Must be between 10 and 75. Changing this forces
+                                  Must be between 10 and 90. Changing this forces
                                   a new resource to be created.
                                 type: number
                               netIpv4TcpKeepaliveProbes:
@@ -985,12 +985,12 @@ spec:
                                 type: boolean
                               netNetfilterNfConntrackBuckets:
                                 description: The sysctl setting net.netfilter.nf_conntrack_buckets.
-                                  Must be between 65536 and 147456. Changing this
+                                  Must be between 65536 and 524288. Changing this
                                   forces a new resource to be created.
                                 type: number
                               netNetfilterNfConntrackMax:
                                 description: The sysctl setting net.netfilter.nf_conntrack_max.
-                                  Must be between 131072 and 1048576. Changing this
+                                  Must be between 131072 and 2097152. Changing this
                                   forces a new resource to be created.
                                 type: number
                               vmMaxMapCount:
@@ -1107,7 +1107,7 @@ spec:
                     type: string
                   osSku:
                     description: 'Specifies the OS SKU used by the agent pool. Possible
-                      values include: Ubuntu, CBLMariner, Mariner, Windows2019, Windows2022.
+                      values include: AzureLinux, Ubuntu, Windows2019, Windows2022.
                       If not specified, the default is Ubuntu if OSType=Linux or Windows2019
                       if OSType=Windows. And the default Windows OSSKU will be changed
                       to Windows2022 after Windows2019 is deprecated. Changing this
@@ -1582,7 +1582,7 @@ spec:
                                 type: number
                               netIpv4IpLocalPortRangeMax:
                                 description: The sysctl setting net.ipv4.ip_local_port_range
-                                  max value. Must be between 1024 and 60999. Changing
+                                  max value. Must be between 32768 and 65535. Changing
                                   this forces a new resource to be created.
                                 type: number
                               netIpv4IpLocalPortRangeMin:
@@ -1612,7 +1612,7 @@ spec:
                                 type: number
                               netIpv4TcpKeepaliveIntvl:
                                 description: The sysctl setting net.ipv4.tcp_keepalive_intvl.
-                                  Must be between 10 and 75. Changing this forces
+                                  Must be between 10 and 90. Changing this forces
                                   a new resource to be created.
                                 type: number
                               netIpv4TcpKeepaliveProbes:
@@ -1642,12 +1642,12 @@ spec:
                                 type: boolean
                               netNetfilterNfConntrackBuckets:
                                 description: The sysctl setting net.netfilter.nf_conntrack_buckets.
-                                  Must be between 65536 and 147456. Changing this
+                                  Must be between 65536 and 524288. Changing this
                                   forces a new resource to be created.
                                 type: number
                               netNetfilterNfConntrackMax:
                                 description: The sysctl setting net.netfilter.nf_conntrack_max.
-                                  Must be between 131072 and 1048576. Changing this
+                                  Must be between 131072 and 2097152. Changing this
                                   forces a new resource to be created.
                                 type: number
                               vmMaxMapCount:
@@ -1764,7 +1764,7 @@ spec:
                     type: string
                   osSku:
                     description: 'Specifies the OS SKU used by the agent pool. Possible
-                      values include: Ubuntu, CBLMariner, Mariner, Windows2019, Windows2022.
+                      values include: AzureLinux, Ubuntu, Windows2019, Windows2022.
                       If not specified, the default is Ubuntu if OSType=Linux or Windows2019
                       if OSType=Windows. And the default Windows OSSKU will be changed
                       to Windows2022 after Windows2019 is deprecated. Changing this

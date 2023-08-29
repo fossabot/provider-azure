@@ -90,10 +90,9 @@ spec:
                       before writing it to persistent storage.
                     type: boolean
                   enablePartitioning:
-                    description: Boolean flag which controls whether to enable Changing
-                      this forces a new resource to be created. the topic to be partitioned
-                      across multiple message brokers. Defaults to false. Changing
-                      this forces a new resource to be created.
+                    description: Boolean flag which controls whether to enable the
+                      topic to be partitioned across multiple message brokers. Defaults
+                      to false. Changing this forces a new resource to be created.
                     type: boolean
                   maxMessageSizeInKilobytes:
                     description: Integer value which controls the maximum size of
@@ -236,10 +235,9 @@ spec:
                       before writing it to persistent storage.
                     type: boolean
                   enablePartitioning:
-                    description: Boolean flag which controls whether to enable Changing
-                      this forces a new resource to be created. the topic to be partitioned
-                      across multiple message brokers. Defaults to false. Changing
-                      this forces a new resource to be created.
+                    description: Boolean flag which controls whether to enable the
+                      topic to be partitioned across multiple message brokers. Defaults
+                      to false. Changing this forces a new resource to be created.
                     type: boolean
                   maxMessageSizeInKilobytes:
                     description: Integer value which controls the maximum size of
@@ -491,10 +489,9 @@ spec:
                       before writing it to persistent storage.
                     type: boolean
                   enablePartitioning:
-                    description: Boolean flag which controls whether to enable Changing
-                      this forces a new resource to be created. the topic to be partitioned
-                      across multiple message brokers. Defaults to false. Changing
-                      this forces a new resource to be created.
+                    description: Boolean flag which controls whether to enable the
+                      topic to be partitioned across multiple message brokers. Defaults
+                      to false. Changing this forces a new resource to be created.
                     type: boolean
                   id:
                     description: The ServiceBus Topic ID.

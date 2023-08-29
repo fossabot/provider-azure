@@ -36,7 +36,7 @@ type WorkspaceInitParameters struct {
 	// Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
 	Location *string `json:"location,omitempty" tf:"location,omitempty"`
 
-	// The capacity reservation level in GB for this workspace. Must be in increments of 100 between 100 and 5000.
+	// The capacity reservation level in GB for this workspace. Possible values are 100, 200, 300, 400, 500, 1000, 2000 and 5000.
 	ReservationCapacityInGbPerDay *float64 `json:"reservationCapacityInGbPerDay,omitempty" tf:"reservation_capacity_in_gb_per_day,omitempty"`
 
 	// The workspace data retention in days. Possible values are either 7 (Free Tier only) or range between 30 and 730.
@@ -75,7 +75,7 @@ type WorkspaceObservation struct {
 	// Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
 	Location *string `json:"location,omitempty" tf:"location,omitempty"`
 
-	// The capacity reservation level in GB for this workspace. Must be in increments of 100 between 100 and 5000.
+	// The capacity reservation level in GB for this workspace. Possible values are 100, 200, 300, 400, 500, 1000, 2000 and 5000.
 	ReservationCapacityInGbPerDay *float64 `json:"reservationCapacityInGbPerDay,omitempty" tf:"reservation_capacity_in_gb_per_day,omitempty"`
 
 	// The name of the resource group in which the Log Analytics workspace is created. Changing this forces a new resource to be created.
@@ -124,7 +124,7 @@ type WorkspaceParameters struct {
 	// +kubebuilder:validation:Optional
 	Location *string `json:"location,omitempty" tf:"location,omitempty"`
 
-	// The capacity reservation level in GB for this workspace. Must be in increments of 100 between 100 and 5000.
+	// The capacity reservation level in GB for this workspace. Possible values are 100, 200, 300, 400, 500, 1000, 2000 and 5000.
 	// +kubebuilder:validation:Optional
 	ReservationCapacityInGbPerDay *float64 `json:"reservationCapacityInGbPerDay,omitempty" tf:"reservation_capacity_in_gb_per_day,omitempty"`
 
