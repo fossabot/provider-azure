@@ -194,6 +194,7 @@ import (
 	accessconnector "github.com/upbound/provider-azure/internal/controller/databricks/accessconnector"
 	workspace "github.com/upbound/provider-azure/internal/controller/databricks/workspace"
 	workspacecustomermanagedkey "github.com/upbound/provider-azure/internal/controller/databricks/workspacecustomermanagedkey"
+	workspacerootdbfscustomermanagedkey "github.com/upbound/provider-azure/internal/controller/databricks/workspacerootdbfscustomermanagedkey"
 	customdataset "github.com/upbound/provider-azure/internal/controller/datafactory/customdataset"
 	dataflow "github.com/upbound/provider-azure/internal/controller/datafactory/dataflow"
 	datasetazureblob "github.com/upbound/provider-azure/internal/controller/datafactory/datasetazureblob"
@@ -914,6 +915,7 @@ func Setup_monolith(mgr ctrl.Manager, o controller.Options) error {
 		accessconnector.Setup,
 		workspace.Setup,
 		workspacecustomermanagedkey.Setup,
+		workspacerootdbfscustomermanagedkey.Setup,
 		customdataset.Setup,
 		dataflow.Setup,
 		datasetazureblob.Setup,
