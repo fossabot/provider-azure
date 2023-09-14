@@ -3,6 +3,7 @@
 <div align="center">
 
 ![CI](https://github.com/upbound/provider-azure/workflows/CI/badge.svg) [![GitHub release](https://img.shields.io/github/release/upbound/provider-azure/all.svg?style=flat-square)](https://github.com/upbound/provider-azure/releases) [![Go Report Card](https://goreportcard.com/badge/github.com/upbound/provider-azure)](https://goreportcard.com/report/github.com/upbound/provider-azure) [![Slack](https://slack.crossplane.io/badge.svg)](https://crossplane.slack.com/archives/C01TRKD4623) [![Twitter Follow](https://img.shields.io/twitter/follow/upbound_io.svg?style=social&label=Follow)](https://twitter.com/intent/follow?screen_name=upbound_io&user_id=788180534543339520)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fupbound%2Fprovider-azure.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fupbound%2Fprovider-azure?ref=badge_shield)
 
 </div>
 
@@ -47,3 +48,6 @@ you can do so via the following channels:
 ## Licensing
 
 Provider Azure is under [the Apache 2.0 license](LICENSE) with [notice](NOTICE).
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fupbound%2Fprovider-azure.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fupbound%2Fprovider-azure?ref=badge_large)
